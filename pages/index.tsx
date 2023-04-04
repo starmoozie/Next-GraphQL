@@ -30,6 +30,7 @@ function Home() {
   const { data, loading, error, fetchMore } = useQuery(AllLinksQuery, {
     variables: { first: 1 },
   });
+  console.log(error)
 
 
   if (loading) return <p>Loading...</p>;
